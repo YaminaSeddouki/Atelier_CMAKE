@@ -13,7 +13,7 @@ jobs:
           cd build
           cmake ..
           make
-          ctest -j4
+          ctest -j"$(nproc)"
 
   Test_Add:
     runs-on: ubuntu-latest
