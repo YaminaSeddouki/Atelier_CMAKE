@@ -13,7 +13,7 @@ jobs:
           cd build
           cmake ..
           make
-          make test
+          ctest -j4
 
   Test_Add:
     runs-on: ubuntu-latest
